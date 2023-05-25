@@ -1,0 +1,1 @@
+GenericSensor[] generic_sensors

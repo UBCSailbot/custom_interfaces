@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(tutorial_interfaces)
+project(ros_msgs)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -27,13 +27,24 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AIS.msg"
+  "msg/Battery.msg"
+  "msg/GenericSensor.msg"
+  "msg/GenericSensors.msg"
   "msg/GlobalPath.msg"
   "msg/GPS.msg"
+  "msg/Kinematics.msg"
+
   "msg/LPathStats.msg"
   "msg/Path.msg"
+  "msg/Power.msg"
   "msg/Ship.msg"
   "msg/Wind.msg"
-  "msg/LatLon.msg"
+  "msg/WindSensor.msg"
+
+  "msg/helpermsg/LatLon.msg"
+  "msg/helpermsg/Speed.msg"
+  "msg/helpermsg/Heading.msg"
+  "msg/helpermsg/Vector3.msg"
 
   "srv/Example.srv"
 # Add packages that above messages depend on below if needed
