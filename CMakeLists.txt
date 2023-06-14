@@ -28,7 +28,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/LatLon.msg"
   "msg/Power.msg"
   "msg/Speed.msg"
-  "msg/Ship.msg"
   "msg/Vector3.msg"
 
   "msg/WindSensor.msg"

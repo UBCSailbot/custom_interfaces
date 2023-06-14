@@ -1,1 +1,1 @@
-Ship[] ships
+AISShip[] ships
