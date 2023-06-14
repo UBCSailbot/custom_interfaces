@@ -14,27 +14,25 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/AIS.msg"
+  "msg/AISShip.msg"
+  "msg/AISShips.msg"
+
   "msg/Battery.msg"
+  "msg/DesiredHeading.msg"
   "msg/GenericSensor.msg"
   "msg/GenericSensors.msg"
   "msg/GlobalPath.msg"
   "msg/GPS.msg"
+  "msg/Heading.msg"
   "msg/Kinematics.msg"
-
-  "msg/LPathStats.msg"
-  "msg/Path.msg"
+  "msg/LatLon.msg"
   "msg/Power.msg"
+  "msg/Speed.msg"
   "msg/Ship.msg"
-  "msg/Wind.msg"
+  "msg/Vector3.msg"
+
   "msg/WindSensor.msg"
-
-  "msg/helpermsg/LatLon.msg"
-  "msg/helpermsg/Speed.msg"
-  "msg/helpermsg/Heading.msg"
-  "msg/helpermsg/Vector3.msg"
-
-  "srv/Example.srv"
+  "msg/WindSensors.msg"
 
   # Add packages that above messages depend on below if needed
   # DEPENDENCIES geometry_msgs

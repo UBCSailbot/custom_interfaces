@@ -1,4 +1,4 @@
-float32 speed
+Speed speed
 
 # 0° means the wind is blowing from the bow to the stern of the boat. 
 # Angles increase in the clockwise direction from here. 

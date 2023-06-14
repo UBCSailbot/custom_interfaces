@@ -1,9 +1,0 @@
-# Example of usage of .srv
-# This is your custom service that requests three integers named a, b, and c
-# Responds with an integer called sum
-
-int64 a
-int64 b
-int64 c
----
-int64 sum
