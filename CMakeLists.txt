@@ -23,12 +23,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GenericSensors.msg"
   "msg/GlobalPath.msg"
   "msg/GPS.msg"
-  "msg/Heading.msg"
-  "msg/Kinematics.msg"
-  "msg/LatLon.msg"
+  "msg/HelperHeading.msg"
+  "msg/HelperLatLon.msg"
+  "msg/HelperSpeed.msg"
   "msg/Power.msg"
-  "msg/Speed.msg"
-  "msg/Vector3.msg"
+
 
   "msg/WindSensor.msg"
   "msg/WindSensors.msg"

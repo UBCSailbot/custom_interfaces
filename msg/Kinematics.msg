@@ -1,6 +1,0 @@
-float32 position_km
-float32 velocity_kmph
-float32 acceleration_kmph
-float32 angular_position_rad
-float32 angular_velocity_radps
-float32 angular_acceleration_radpss
