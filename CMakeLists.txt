@@ -14,23 +14,23 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/AISShip.msg"
+  # external
   "msg/AISShips.msg"
-
-  "msg/Battery.msg"
+  "msg/Batteries.msg"
   "msg/DesiredHeading.msg"
-  "msg/GenericSensor.msg"
   "msg/GenericSensors.msg"
   "msg/GlobalPath.msg"
   "msg/GPS.msg"
+  "msg/WindSensor.msg"
+  "msg/WindSensors.msg"
+
+  # internal
+  "msg/HelperAISShip.msg"
+  "msg/HelperBattery.msg"
+  "msg/HelperGenericSensor.msg"
   "msg/HelperHeading.msg"
   "msg/HelperLatLon.msg"
   "msg/HelperSpeed.msg"
-  "msg/Power.msg"
-
-
-  "msg/WindSensor.msg"
-  "msg/WindSensors.msg"
 
   # Add packages that above messages depend on below if needed
   # DEPENDENCIES geometry_msgs
