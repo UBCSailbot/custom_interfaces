@@ -1,1 +1,1 @@
-HelperAISShip[] ships # Dynamic array of Ship
+HelperAISShip[] ships

@@ -1,2 +1,4 @@
-uint8 id # Sensor identifier
-uint64 data # Raw, unparsed, binary data
+# Sensor identifier
+uint8 id
+# Raw, unparsed, binary data
+uint64 data
