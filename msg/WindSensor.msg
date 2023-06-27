@@ -1,0 +1,4 @@
+HelperSpeed speed
+# Unit: degrees, 0° means the wind is blowing from the bow to the stern of the boat, increase CW
+# Range: [-180, 180) for symmetry
+int16 direction_degrees
