@@ -1,1 +1,1 @@
-GenericSensor[] generic_sensors
+HelperGenericSensor[] generic_sensors

@@ -1,1 +1,1 @@
-Battery[2] batteries
+HelperBattery[2] batteries
