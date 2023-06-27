@@ -1,4 +1,4 @@
 int32 id # AIS identifier
-LatLon lat_lon
-Speed speed
-Heading heading
+HelperLatLon lat_lon
+HelperSpeed speed
+HelperHeading heading

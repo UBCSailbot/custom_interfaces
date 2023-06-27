@@ -1,1 +1,1 @@
-LatLon[] waypoints # Dynamic array of LatLon
+HelperLatLon[] waypoints # Dynamic array of HelperLatLon

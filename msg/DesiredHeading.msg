@@ -1,1 +1,1 @@
-Heading heading
+HelperHeading heading
