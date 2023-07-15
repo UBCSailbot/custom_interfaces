@@ -32,15 +32,15 @@ Used to standardize conventions across external interfaces.
 | HelperLatLon        | GlobalPath, GPS, HelperAISShip     |
 | HelperSpeed         | GPS, HelperAISShip, WindSensor     |
 
-## Existing Libraries
+## Resources
 
-Existing issue with discussion of topic see [here.](https://github.com/UBCSailbot/custom_interfaces/issues/3#issuecomment-1626875658)
+### Common Interfaces
 
-Possible to-add existing ROS libraries based on ros2 repository:
-[common_interfaces](https://github.com/ros2/common_interfaces) branch `humble`.
-These can serve as either useful references or can be added entirely.
+The ROS2 [common_interfaces](https://github.com/ros2/common_interfaces/tree/humble) repository defines a set of
+packages which contain common interface files. Since we are using the Humble version of ROS2, see the `humble` branch.
+These interfaces can be used in this repository or as a reference for ideas and best practices.
 
-| ROS Message         | Possible Usage                     |
+| Package             | Possible Usage                     |
 | ------------------- | ---------------------------------- |
 | diagnostic_msgs     | Could be used for website sensors  |
 | geometry_msgs       | Simulator, Local Pathfinding       |
@@ -48,3 +48,5 @@ These can serve as either useful references or can be added entirely.
 | std_msgs            | Possible reference                 |
 | std_srvs            | Possible reference                 |
 | visualization_msgs  | Possible reference                 |
+
+For more detail on the usefulness of each package, see [this issue comment](https://github.com/UBCSailbot/custom_interfaces/issues/3#issuecomment-1626875658).
