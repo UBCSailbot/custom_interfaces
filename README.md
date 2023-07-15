@@ -31,3 +31,19 @@ Used to standardize conventions across external interfaces.
 | HelperHeading       | DesiredHeading, GPS, HelperAISShip |
 | HelperLatLon        | GlobalPath, GPS, HelperAISShip     |
 | HelperSpeed         | GPS, HelperAISShip, WindSensor     |
+
+## Existing Libraries
+
+Possible to-add existing ROS libraries based on ros2 repository:
+[common_interfaces](https://github.com/ros2/common_interfaces) branch ```humble```.
+These can serve as either useful references or can be added entirely.
+
+| ROS Message         | Description                        |
+| ------------------- | ---------------------------------- |
+| diagnostic_msgs     | AISShips                           |
+| geometry_msgs       | Batteries                          |
+| sensor_msgs         | GenericSensors                     |
+| shape_msgs          | DesiredHeading, GPS, HelperAISShip |
+| std_msgs            | GlobalPath, GPS, HelperAISShip     |
+| std_srvs            | GPS, HelperAISShip, WindSensor     |
+| visualization_msgs  | GlobalPath, GPS, HelperAISShip     |
