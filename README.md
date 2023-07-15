@@ -34,16 +34,17 @@ Used to standardize conventions across external interfaces.
 
 ## Existing Libraries
 
+Existing issue with discussion of topic see [here.](https://github.com/UBCSailbot/custom_interfaces/issues/3#issuecomment-1626875658)
+
 Possible to-add existing ROS libraries based on ros2 repository:
-[common_interfaces](https://github.com/ros2/common_interfaces) branch ```humble```.
+[common_interfaces](https://github.com/ros2/common_interfaces) branch `humble`.
 These can serve as either useful references or can be added entirely.
 
-| ROS Message         | Description                        |
+| ROS Message         | Possible Usage                     |
 | ------------------- | ---------------------------------- |
-| diagnostic_msgs     | AISShips                           |
-| geometry_msgs       | Batteries                          |
-| sensor_msgs         | GenericSensors                     |
-| shape_msgs          | DesiredHeading, GPS, HelperAISShip |
-| std_msgs            | GlobalPath, GPS, HelperAISShip     |
-| std_srvs            | GPS, HelperAISShip, WindSensor     |
-| visualization_msgs  | GlobalPath, GPS, HelperAISShip     |
+| diagnostic_msgs     | Could be used for website sensors  |
+| geometry_msgs       | Simulator, Local Pathfinding       |
+| sensor_msgs         | CAN transceiver reference          |
+| std_msgs            | Possible reference                 |
+| std_srvs            | Possible reference                 |
+| visualization_msgs  | Possible reference                 |
