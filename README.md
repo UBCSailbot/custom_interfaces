@@ -10,7 +10,7 @@ Used to communicate data between ROS packages.
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
 | `ais_ships`            | AISShips       | AIS Receiver             | Local Pathfinding                           |
 | `batteries`            | Batteries      | CAN Transceiver          | Local/Remote Transceiver                    |
-| `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller                                  |
+| `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
 | `data_sensors`         | GenericSensors | CAN Transceiver          | Local/Remote Transceiver                    |
 | `global_path`          | GlobalPath     | Local/Remote Transceiver | Local Pathfinding                           |
 | `gps`                  | GPS            | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
