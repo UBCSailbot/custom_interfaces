@@ -44,9 +44,9 @@ These interfaces can be used in this repository or as a reference for ideas and 
 | ------------------- | ---------------------------------- |
 | diagnostic_msgs     | Could be used for website sensors  |
 | geometry_msgs       | Simulator, Local Pathfinding       |
-| sensor_msgs         | CAN transceiver reference          |
-| std_msgs            | Possible reference                 |
-| std_srvs            | Possible reference                 |
-| visualization_msgs  | Possible reference                 |
+| sensor_msgs         | Reference for CAN Transceiver      |
+| std_msgs            | Reference                          |
+| std_srvs            | Reference                          |
+| visualization_msgs  | Reference                          |
 
 For more detail on the usefulness of each package, see [this issue comment](https://github.com/UBCSailbot/custom_interfaces/issues/3#issuecomment-1626875658).
