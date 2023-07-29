@@ -1,10 +1,19 @@
 # Custom Interfaces
 
-UBC Sailbot's custom interfaces ROS package.
+UBC Sailbot's custom interfaces ROS package. To add `custom_interfaces` to another ROS package, follow the instructions
+[here](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html#test-the-new-interfaces).
 
-## External Interfaces
+The terminology that we use in this document are the following:
 
-Used to communicate data between ROS packages.
+- **External Interface**: An interface used to communicate data between nodes and ROS packages.
+- **Internal Interface**: An interface used to standardize conventions across external interfaces. Standards are
+documented in the `.msg` or `.srv` file associated with that interface.
+
+## Project-wide Interfaces
+
+ROS messages and services used across many ROS packages in the project.
+
+### Project-wide External Interfaces
 
 | Topic                  | Type           | Publisher                | Subscriber                                  |
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
@@ -19,9 +28,7 @@ Used to communicate data between ROS packages.
 | `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CAN Transceiver                             |
 | `wind_sensors`         | WindSensors    | CAN Transceiver          | Local/Remote Transceiver                    |
 
-## Internal Interfaces
-
-Used to standardize conventions across external interfaces.
+### Project-wide Internal Interfaces
 
 | Interface           | Used In                            |
 | ------------------- | ---------------------------------- |
@@ -31,6 +38,23 @@ Used to standardize conventions across external interfaces.
 | HelperHeading       | DesiredHeading, GPS, HelperAISShip |
 | HelperLatLon        | GlobalPath, GPS, HelperAISShip     |
 | HelperSpeed         | GPS, HelperAISShip, WindSensor     |
+
+## Boat Simulator Interfaces
+
+ROS messages and services used in our [boat simulator](https://github.com/UBCSailbot/boat_simulator).
+
+### Boat Simulator External Interfaces
+
+| Topic                  | Type           | Publisher                | Subscriber                                  |
+| ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
+| `mock_kinematics`      | SimWorldState  | Simulator Physics Engine | Simulator Visualizer                        |
+
+### Boat Simulator Internal Interfaces
+
+| Interface            | Used In                            |
+| -------------------- | ---------------------------------- |
+| SimHelperEnvironment | SimWorldState                      |
+| SimHelperKinematics  | SimWorldState                      |
 
 ## Resources
 
@@ -50,3 +74,4 @@ These interfaces can be used in this repository or as a reference for ideas and 
 | visualization_msgs  | Reference                          |
 
 For more detail on the usefulness of each package, see [this issue comment](https://github.com/UBCSailbot/custom_interfaces/issues/3#issuecomment-1626875658).
+If you are interested in creating your own custom message or service, see the [ROS Humble documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html).
