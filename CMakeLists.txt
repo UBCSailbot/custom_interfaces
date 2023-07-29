@@ -5,15 +5,16 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
+# Find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
-# find_package(geometry_msgs REQUIRED)
+
+# Add more dependencies manually with: find_package(<dependency> REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
+# Common custom messages
+set(common_msg
   # external
   "msg/AISShips.msg"
   "msg/Batteries.msg"
@@ -31,9 +32,25 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HelperHeading.msg"
   "msg/HelperLatLon.msg"
   "msg/HelperSpeed.msg"
+)
+
+# Boat simulator custom messages
+set(simulator_msg
+  # external
+  "msg/SimWorldState.msg"
+
+  # internal
+  "msg/SimHelperEnvironment.msg"
+  "msg/SimHelperKinematics.msg"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  # Add custom messages
+  ${common_msg}
+  ${simulator_msg}
 
   # Add packages that above messages depend on below if needed
-  # DEPENDENCIES geometry_msgs
+  DEPENDENCIES std_msgs geometry_msgs
 )
 
 if(BUILD_TESTING)
