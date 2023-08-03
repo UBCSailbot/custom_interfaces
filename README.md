@@ -56,6 +56,13 @@ ROS messages and services used in our [boat simulator](https://github.com/UBCSai
 | SimHelperEnvironment | SimWorldState                      |
 | SimHelperKinematics  | SimWorldState                      |
 
+### Boat Simulator Actions
+
+| Action                  | Client Node              | Server Node                    |
+| ----------------------- | ------------------------ | ------------------------------ |
+| SimRudderActuation      | Simulator Physics Engine | Simulator Low Level Controller |
+| SimSailTrimTabActuation | Simulator Physics Engine | Simulator Low Level Controller |
+
 ## Resources
 
 ### Common Interfaces
