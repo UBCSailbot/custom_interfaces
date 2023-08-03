@@ -44,10 +44,17 @@ set(simulator_msg
   "msg/SimHelperKinematics.msg"
 )
 
+# Boat simulator custom actions
+set(simulator_action
+  "action/RudderActuation.action"
+  "action/SailTrimTabActuation.action"
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   # Add custom messages
   ${common_msg}
   ${simulator_msg}
+  ${simulator_action}
 
   # Add packages that above messages depend on below if needed
   DEPENDENCIES std_msgs geometry_msgs
