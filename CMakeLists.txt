@@ -46,8 +46,8 @@ set(simulator_msg
 
 # Boat simulator custom actions
 set(simulator_action
-  "action/RudderActuation.action"
-  "action/SailTrimTabActuation.action"
+  "action/SimRudderActuation.action"
+  "action/SimSailTrimTabActuation.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
