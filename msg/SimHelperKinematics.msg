@@ -1,4 +1,4 @@
-# Contains both position and orientation (in quaternions)
+# Contains both position and orientation (in quaternions, following a East-North-Up convention)
 # Position Unit: km, distance from the origin
 geometry_msgs/Pose pose
 
