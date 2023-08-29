@@ -15,7 +15,7 @@ ROS messages and services used across many ROS packages in the project.
 
 ### Project-wide External Interfaces
 
-| Topic                  | Type           | Publisher                | Subscriber                                  |
+| Topic                  | Type           | Publisher                | Subscriber(s)                               |
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
 | `ais_ships`            | AISShips       | AIS Receiver             | Local Pathfinding                           |
 | `batteries`            | Batteries      | CAN Transceiver          | Local/Remote Transceiver                    |
@@ -45,7 +45,7 @@ ROS messages and services used in our [boat simulator](https://github.com/UBCSai
 
 ### Boat Simulator External Interfaces
 
-| Topic                  | Type           | Publisher                | Subscriber                                  |
+| Topic                  | Type           | Publisher                | Subscriber(s)                               |
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
 | `mock_kinematics`      | SimWorldState  | Simulator Physics Engine | Simulator Visualizer                        |
 
