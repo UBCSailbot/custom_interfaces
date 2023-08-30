@@ -38,10 +38,6 @@ set(common_msg
 set(simulator_msg
   # external
   "msg/SimWorldState.msg"
-
-  # internal
-  "msg/SimHelperEnvironment.msg"
-  "msg/SimHelperKinematics.msg"
 )
 
 # Boat simulator custom actions
