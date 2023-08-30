@@ -49,13 +49,6 @@ ROS messages and services used in our [boat simulator](https://github.com/UBCSai
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
 | `mock_kinematics`      | SimWorldState  | Simulator Physics Engine | Simulator Visualizer                        |
 
-### Boat Simulator Internal Interfaces
-
-| Interface            | Used In                            |
-| -------------------- | ---------------------------------- |
-| SimHelperEnvironment | SimWorldState                      |
-| SimHelperKinematics  | SimWorldState                      |
-
 ### Boat Simulator Actions
 
 | Action                  | Client Node              | Server Node                    |
