@@ -9,8 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 # Add more dependencies manually with: find_package(<dependency> REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
+set(INTF_DEPENDENCIES std_msgs geometry_msgs)
+foreach(dep IN LISTS INTF_DEPENDENCIES)
+  find_package(${dep} REQUIRED)
+endforeach()
 find_package(rosidl_default_generators REQUIRED)
 
 # Common custom messages
@@ -67,5 +69,7 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+ament_export_dependencies(${INTF_DEPENDENCIES} rosidl_default_runtime)
 
 ament_package()
