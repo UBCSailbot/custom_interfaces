@@ -1,2 +1,2 @@
 # Unit: km/h
-float32 SOG
+float32 sog

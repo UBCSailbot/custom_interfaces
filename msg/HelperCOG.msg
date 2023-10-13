@@ -1,2 +1,2 @@
 # Unit: decimal degrees
-float32 COG
+float32 cog

@@ -1,6 +1,6 @@
 # AIS identifier
 int32 id
 HelperLatLon lat_lon
-HelperCOG   COG
-HelperSOG   SOG
+HelperCOG   cog
+HelperSOG   sog
 HelperDimensions dimensions
