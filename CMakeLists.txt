@@ -35,6 +35,7 @@ set(common_msg
   "msg/HelperCOG.msg"
   "msg/HelperSOG.msg"
   "msg/HelperDimensions.msg"
+  "msg/HelperROT.msg"
 )
 
 # Boat simulator custom messages
