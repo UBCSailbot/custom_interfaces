@@ -23,6 +23,7 @@ ROS messages and services used across many ROS packages in the project.
 | `data_sensors`         | GenericSensors | CAN Transceiver          | Local/Remote Transceiver                    |
 | `global_path`          | GlobalPath     | Local/Remote Transceiver | Local Pathfinding                           |
 | `gps`                  | GPS            | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
+| `local_path`           | GlobalPath     | Local Pathfinding        | Local/Remote Transceiver                    |
 | `mock_gps`             | GPS            | Boat Simulator           | CAN Transceiver                             |
 | `filtered_wind_sensor` | WindSensor     | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
 | `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CAN Transceiver                             |
@@ -30,14 +31,14 @@ ROS messages and services used across many ROS packages in the project.
 
 ### Project-wide Internal Interfaces
 
-| Interface           | Used In                            |
-| ------------------- | ---------------------------------- |
-| HelperAISShip       | AISShips                           |
-| HelperBattery       | Batteries                          |
-| HelperGenericSensor | GenericSensors                     |
-| HelperHeading       | DesiredHeading, GPS, HelperAISShip |
-| HelperLatLon        | GlobalPath, GPS, HelperAISShip     |
-| HelperSpeed         | GPS, HelperAISShip, WindSensor     |
+| Interface           | Used In                                   |
+| ------------------- | ----------------------------------------- |
+| HelperAISShip       | AISShips                                  |
+| HelperBattery       | Batteries                                 |
+| HelperGenericSensor | GenericSensors                            |
+| HelperHeading       | DesiredHeading, GPS, HelperAISShip        |
+| HelperLatLon        | GlobalPath, GPS, LocalPath, HelperAISShip |
+| HelperSpeed         | GPS, HelperAISShip, WindSensor            |
 
 ## Boat Simulator Interfaces
 
