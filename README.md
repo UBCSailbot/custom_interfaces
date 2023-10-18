@@ -21,9 +21,9 @@ ROS messages and services used across many ROS packages in the project.
 | `batteries`            | Batteries      | CAN Transceiver          | Local/Remote Transceiver                    |
 | `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
 | `data_sensors`         | GenericSensors | CAN Transceiver          | Local/Remote Transceiver                    |
-| `global_path`          | GlobalPath     | Local/Remote Transceiver | Local Pathfinding                           |
+| `global_path`          | Path           | Local/Remote Transceiver | Local Pathfinding                           |
 | `gps`                  | GPS            | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
-| `local_path`           | GlobalPath     | Local Pathfinding        | Local/Remote Transceiver                    |
+| `local_path`           | Path           | Local Pathfinding        | Local/Remote Transceiver                    |
 | `mock_gps`             | GPS            | Boat Simulator           | CAN Transceiver                             |
 | `filtered_wind_sensor` | WindSensor     | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
 | `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CAN Transceiver                             |
