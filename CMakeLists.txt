@@ -32,7 +32,7 @@ set(common_msg
   "msg/HelperHeading.msg"
   "msg/HelperLatLon.msg"
   "msg/HelperSpeed.msg"
-  "msg/HelperDimensions.msg"
+  "msg/HelperDimension.msg"
   "msg/HelperROT.msg"
 )
 
