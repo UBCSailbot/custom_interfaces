@@ -7,5 +7,7 @@ HelperHeading   cog
 HelperSpeed   sog
 # rate of turn in degrees per hour, positive for CW, negative for CCW (float)
 HelperROT   rot
-# dimensions of the boat in meters (float)
-HelperDimensions dimensions
+# width of the ship in meters (float)
+HelperDimension width
+# length of the ship in meters (float)
+HelperDimension length

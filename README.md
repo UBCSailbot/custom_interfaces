@@ -38,6 +38,8 @@ ROS messages and services used across many ROS packages in the project.
 | HelperHeading       | DesiredHeading, GPS, HelperAISShip |
 | HelperLatLon        | GlobalPath, GPS, HelperAISShip     |
 | HelperSpeed         | GPS, HelperAISShip, WindSensor     |
+| HelperROT           | HelperAISShip                      |
+| HelperDimension     | HelperAISShip                      |
 
 ## Boat Simulator Interfaces
 
