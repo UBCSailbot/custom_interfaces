@@ -1,1 +1,0 @@
-HelperLatLon[] waypoints
