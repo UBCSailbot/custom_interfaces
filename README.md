@@ -31,14 +31,14 @@ ROS messages and services used across many ROS packages in the project.
 
 ### Project-wide Internal Interfaces
 
-| Interface           | Used In                                   |
-| ------------------- | ----------------------------------------- |
-| HelperAISShip       | AISShips                                  |
-| HelperBattery       | Batteries                                 |
-| HelperGenericSensor | GenericSensors                            |
-| HelperHeading       | DesiredHeading, GPS, HelperAISShip        |
-| HelperLatLon        | GlobalPath, GPS, LocalPath, HelperAISShip |
-| HelperSpeed         | GPS, HelperAISShip, WindSensor            |
+| Interface           | Used In                            |
+| ------------------- | ---------------------------------- |
+| HelperAISShip       | AISShips                           |
+| HelperBattery       | Batteries                          |
+| HelperGenericSensor | GenericSensors                     |
+| HelperHeading       | DesiredHeading, GPS, HelperAISShip |
+| HelperLatLon        | Path, GPS, HelperAISShip           |
+| HelperSpeed         | GPS, HelperAISShip, WindSensor     |
 
 ## Boat Simulator Interfaces
 
