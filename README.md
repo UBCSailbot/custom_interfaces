@@ -34,12 +34,12 @@ ROS messages and services used across many ROS packages in the project.
 | ------------------- | ---------------------------------- |
 | HelperAISShip       | AISShips                           |
 | HelperBattery       | Batteries                          |
+| HelperDimension     | HelperAISShip                      |
 | HelperGenericSensor | GenericSensors                     |
 | HelperHeading       | DesiredHeading, GPS, HelperAISShip |
 | HelperLatLon        | GlobalPath, GPS, HelperAISShip     |
-| HelperSpeed         | GPS, HelperAISShip, WindSensor     |
 | HelperROT           | HelperAISShip                      |
-| HelperDimension     | HelperAISShip                      |
+| HelperSpeed         | GPS, HelperAISShip, WindSensor     |
 
 ## Boat Simulator Interfaces
 
