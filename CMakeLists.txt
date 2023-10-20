@@ -20,8 +20,9 @@ set(common_msg
   "msg/Batteries.msg"
   "msg/DesiredHeading.msg"
   "msg/GenericSensors.msg"
-  "msg/GlobalPath.msg"
   "msg/GPS.msg"
+  "msg/LPathData.msg"
+  "msg/Path.msg"
   "msg/WindSensor.msg"
   "msg/WindSensors.msg"
 
