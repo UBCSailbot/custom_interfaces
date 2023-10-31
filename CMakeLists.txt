@@ -29,9 +29,11 @@ set(common_msg
   # internal
   "msg/HelperAISShip.msg"
   "msg/HelperBattery.msg"
+  "msg/HelperDimension.msg"
   "msg/HelperGenericSensor.msg"
   "msg/HelperHeading.msg"
   "msg/HelperLatLon.msg"
+  "msg/HelperROT.msg"
   "msg/HelperSpeed.msg"
 )
 
