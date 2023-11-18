@@ -14,7 +14,11 @@ documented in the `.msg` or `.srv` file associated with that interface.
 ROS messages and services used across many ROS packages in the project.
 
 ### Project-wide External Interfaces
-
+<!---
+Formatting reminder:
+1. Keep 'Type' column organized alphabetically
+2. 'mock' version of topic should be after its common counterpart
+--->
 | Topic                  | Type           | Publisher                | Subscriber(s)                               |
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
 | `ais_ships`            | AISShips       | CANTransceiverROSIntf    | Local Pathfinding, Local Transceiver        |
