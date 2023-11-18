@@ -18,11 +18,13 @@ set(common_msg
   # external
   "msg/AISShips.msg"
   "msg/Batteries.msg"
+  "msg/BoatCmd.msg"
   "msg/DesiredHeading.msg"
   "msg/GenericSensors.msg"
   "msg/GPS.msg"
   "msg/LPathData.msg"
   "msg/Path.msg"
+  "msg/SimCmd.msg"
   "msg/WindSensor.msg"
   "msg/WindSensors.msg"
 

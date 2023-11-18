@@ -17,17 +17,20 @@ ROS messages and services used across many ROS packages in the project.
 
 | Topic                  | Type           | Publisher                | Subscriber(s)                               |
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
-| `ais_ships`            | AISShips       | AIS Receiver             | Local Pathfinding                           |
-| `batteries`            | Batteries      | CAN Transceiver          | Local/Remote Transceiver                    |
+| `ais_ships`            | AISShips       | CANTransceiverROSIntf    | Local Pathfinding, Local Transceiver        |
+| `mock_ais_ships`       | AISShips       | Mock AIS                 | CanSimIntf                                  |
+| `batteries`            | Batteries      | CANTransceiverROSIntf    | Local/Remote Transceiver                    |
+| `boat_cmd`             | BoatCmd        | Controller               | CANTransceiverROSIntf                       |
 | `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
-| `data_sensors`         | GenericSensors | CAN Transceiver          | Local/Remote Transceiver                    |
+| `data_sensors`         | GenericSensors | CANTransceiverROSIntf    | Local/Remote Transceiver                    |
 | `global_path`          | Path           | Local/Remote Transceiver | Local Pathfinding                           |
-| `gps`                  | GPS            | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
+| `gps`                  | GPS            | CANTransceiverROSIntf    | Local/Remote Transceiver, Local Pathfinding |
 | `local_path_data`      | LPathData      | Local Pathfinding        | Local/Remote Transceiver                    |
-| `mock_gps`             | GPS            | Boat Simulator           | CAN Transceiver                             |
-| `filtered_wind_sensor` | WindSensor     | CAN Transceiver          | Local/Remote Transceiver, Local Pathfinding |
-| `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CAN Transceiver                             |
-| `wind_sensors`         | WindSensors    | CAN Transceiver          | Local/Remote Transceiver                    |
+| `mock_gps`             | GPS            | Boat Simulator           | CanSimIntf                                  |
+| `sim_cmd`              | SimCmd         | CanSimIntf               | Simulator                                   |
+| `filtered_wind_sensor` | WindSensor     | CANTransceiverROSIntf    | Local/Remote Transceiver, Local Pathfinding |
+| `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CanSimIntf                                  |
+| `wind_sensors`         | WindSensors    | CANTransceiverROSIntf    | Local/Remote Transceiver                    |
 
 ### Project-wide Internal Interfaces
 
