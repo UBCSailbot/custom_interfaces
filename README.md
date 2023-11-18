@@ -23,10 +23,10 @@ ROS messages and services used across many ROS packages in the project.
 | `boat_cmd`             | BoatCmd        | Controller               | CANTransceiverROSIntf                       |
 | `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
 | `data_sensors`         | GenericSensors | CANTransceiverROSIntf    | Local/Remote Transceiver                    |
-| `global_path`          | Path           | Local/Remote Transceiver | Local Pathfinding                           |
+| `mock_gps`             | GPS            | Boat Simulator           | CanSimIntf                                  |
 | `gps`                  | GPS            | CANTransceiverROSIntf    | Local/Remote Transceiver, Local Pathfinding |
 | `local_path_data`      | LPathData      | Local Pathfinding        | Local/Remote Transceiver                    |
-| `mock_gps`             | GPS            | Boat Simulator           | CanSimIntf                                  |
+| `global_path`          | Path           | Local/Remote Transceiver | Local Pathfinding                           |
 | `sim_cmd`              | SimCmd         | CanSimIntf               | Simulator                                   |
 | `filtered_wind_sensor` | WindSensor     | CANTransceiverROSIntf    | Local/Remote Transceiver, Local Pathfinding |
 | `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CanSimIntf                                  |
