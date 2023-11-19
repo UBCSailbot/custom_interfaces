@@ -21,19 +21,19 @@ Formatting reminder:
 --->
 | Topic                  | Type           | Publisher                | Subscriber(s)                               |
 | ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
-| `ais_ships`            | AISShips       | CANTransceiverROSIntf    | Local Pathfinding, Local Transceiver        |
+| `ais_ships`            | AISShips       | CanTrxRosIntf            | Local Pathfinding, Local Transceiver        |
 | `mock_ais_ships`       | AISShips       | Mock AIS                 | CanSimIntf                                  |
-| `batteries`            | Batteries      | CANTransceiverROSIntf    | Local Transceiver                           |
-| `boat_cmd`             | BoatCmd        | Controller               | CANTransceiverROSIntf                       |
+| `batteries`            | Batteries      | CanTrxRosIntf            | Local Transceiver                           |
+| `boat_cmd`             | BoatCmd        | Controller               | CanTrxRosIntf                               |
 | `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
-| `data_sensors`         | GenericSensors | CANTransceiverROSIntf    | Local Transceiver                           |
-| `gps`                  | GPS            | CANTransceiverROSIntf    | Local Transceiver, Local Pathfinding        |
+| `data_sensors`         | GenericSensors | CanTrxRosIntf            | Local Transceiver                           |
+| `gps`                  | GPS            | CanTrxRosIntf            | Local Transceiver, Local Pathfinding        |
 | `mock_gps`             | GPS            | Boat Simulator           | CanSimIntf                                  |
 | `local_path_data`      | LPathData      | Local Pathfinding        | Local Transceiver                           |
-| `global_path`          | Path           | Local/Remote Transceiver | Local Pathfinding                           |
+| `global_path`          | Path           | Local Transceiver        | Local Pathfinding                           |
 | `sim_cmd`              | SimCmd         | CanSimIntf               | Simulator                                   |
-| `filtered_wind_sensor` | WindSensor     | CANTransceiverROSIntf    | Local Transceiver, Local Pathfinding        |
-| `wind_sensors`         | WindSensors    | CANTransceiverROSIntf    | Local Transceiver                           |
+| `filtered_wind_sensor` | WindSensor     | CanTrxRosIntf            | Local Transceiver, Local Pathfinding        |
+| `wind_sensors`         | WindSensors    | CanTrxRosIntf            | Local Transceiver                           |
 | `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CanSimIntf                                  |
 
 ### Project-wide Internal Interfaces
