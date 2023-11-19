@@ -24,14 +24,14 @@ Formatting reminder:
 | `ais_ships`            | AISShips       | CanTrxRosIntf            | Local Pathfinding, Local Transceiver        |
 | `mock_ais_ships`       | AISShips       | Mock AIS                 | CanSimIntf                                  |
 | `batteries`            | Batteries      | CanTrxRosIntf            | Local Transceiver                           |
-| `boat_cmd`             | BoatCmd        | Controller               | CanTrxRosIntf                               |
 | `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
 | `data_sensors`         | GenericSensors | CanTrxRosIntf            | Local Transceiver                           |
 | `gps`                  | GPS            | CanTrxRosIntf            | Local Transceiver, Local Pathfinding        |
 | `mock_gps`             | GPS            | Boat Simulator           | CanSimIntf                                  |
 | `local_path_data`      | LPathData      | Local Pathfinding        | Local Transceiver                           |
 | `global_path`          | Path           | Local Transceiver        | Local Pathfinding                           |
-| `sim_cmd`              | SimCmd         | CanSimIntf               | Simulator                                   |
+| `sail_cmd`             | SailCmd        | Controller               | CanTrxRosIntf                               |
+| `sim_sail_cmd`         | SailCmd        | CanSimIntf               | Simulator                                   |
 | `filtered_wind_sensor` | WindSensor     | CanTrxRosIntf            | Local Transceiver, Local Pathfinding        |
 | `wind_sensors`         | WindSensors    | CanTrxRosIntf            | Local Transceiver                           |
 | `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CanSimIntf                                  |
