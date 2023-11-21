@@ -1,0 +1,104 @@
+@startuml External Interfaces
+Title External Interfaces
+
+!include %getenv("PLANTUML_TEMPLATE_PATH")
+
+skinparam State {
+    BackgroundColor {
+        <<Legend>> White
+        <<Topic>>  $SAILBOT_BLUE
+        <<Pub>>    Green
+        <<Sub>>    Red
+    }
+    Font {
+        Color<<Legend>> Black
+        Style<<Legend>> Bold
+    }
+}
+
+State Legend<<Legend>> {
+    State "Publisher" <<Pub>>
+    State Topic <<Topic>> : Type
+    State "Subscriber" <<Sub>>
+    State Node {
+
+    }
+}
+
+State ais_ships<<Topic>> : AISShips
+State batteries<<Topic>> : Batteries
+state desired_heading<<Topic>> : DesiredHeading
+State data_sensors<<Topic>> : GenericSensors
+State global_path<<Topic>> : Path
+State gps<<Topic>> : GPS
+State local_path_data<<Topic>> : LPathData
+State mock_gps<<Topic>> : GPS
+State filtered_wind_sensor<<Topic>> : WindSensor
+State mock_wind_sensors<<Topic>> : WindSensors
+State wind_sensors<<Topic>> : WindSensors
+
+State "Local Pathfinding" as l_path {
+    State "Publish" as l_path_pub <<Pub>>
+    State "Subscribe" as l_path_sub <<Sub>>
+}
+State "Local Transceiver" as l_trans {
+    State "Publish" as l_trans_pub <<Pub>>
+    State "Subscribe" as l_trans_sub <<Sub>>
+}
+State "Controller" as ctrl {
+    ' State "Publish" as ctrl_pub <<Pub>>
+    State "Subscribe" as ctrl_sub <<Sub>>
+}
+State "Boat Simulator" as sim {
+    State "Publish" as sim_pub <<Pub>>
+    State "Subscribe" as sim_sub <<Sub>>
+}
+
+State "Can Transceiver" as can {
+    State "Publish" as can_pub <<Pub>>
+    State "Subscribe" as can_sub <<Sub>>
+}
+
+' Publisher --> Topic
+
+can_pub --> ais_ships
+can_pub --> batteries
+can_pub --> data_sensors
+can_pub --> gps
+can_pub --> filtered_wind_sensor
+can_pub --> wind_sensors
+
+l_path_pub --> desired_heading
+l_path_pub --> local_path_data
+
+l_trans_pub --> global_path
+
+sim_pub -left-> mock_gps
+sim_pub -left-> mock_wind_sensors
+
+' Topic --> Subscriber
+
+ais_ships --> l_path_sub
+ais_ships --> l_trans_sub
+
+batteries --> l_trans_sub
+
+desired_heading --> ctrl_sub
+desired_heading --> sim_sub
+
+data_sensors --> l_trans_sub
+
+global_path --> l_path_sub
+
+gps --> l_trans_sub
+gps --> l_path_sub
+
+local_path_data -up-> l_trans_sub
+
+mock_gps -up-> can_sub
+
+filtered_wind_sensor --> l_path_sub
+
+mock_wind_sensors -up-> can_sub
+
+wind_sensors --> l_trans_sub
