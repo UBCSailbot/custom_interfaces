@@ -1,4 +1,4 @@
-@startuml External Interfaces
+@startuml external_interfaces
 Title External Interfaces
 
 !include %getenv("PLANTUML_TEMPLATE_PATH")
