@@ -14,20 +14,27 @@ documented in the `.msg` or `.srv` file associated with that interface.
 ROS messages and services used across many ROS packages in the project.
 
 ### Project-wide External Interfaces
-
-| Topic                  | Type           | Publisher                | Subscriber(s)                               |
-| ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
-| `ais_ships`            | AISShips       | AIS Receiver             | Local Pathfinding                           |
-| `batteries`            | Batteries      | CAN Transceiver          | Local Transceiver                           |
-| `desired_heading`      | DesiredHeading | Local Pathfinding        | Controller, Boat Simulator                  |
-| `data_sensors`         | GenericSensors | CAN Transceiver          | Local Transceiver                           |
-| `global_path`          | Path           | Local Transceiver        | Local Pathfinding                           |
-| `gps`                  | GPS            | CAN Transceiver          | Local Transceiver, Local Pathfinding        |
-| `local_path_data`      | LPathData      | Local Pathfinding        | Local Transceiver                           |
-| `mock_gps`             | GPS            | Boat Simulator           | CAN Transceiver                             |
-| `filtered_wind_sensor` | WindSensor     | CAN Transceiver          | Local Transceiver, Local Pathfinding        |
-| `mock_wind_sensors`    | WindSensors    | Boat Simulator           | CAN Transceiver                             |
-| `wind_sensors`         | WindSensors    | CAN Transceiver          | Local Transceiver                           |
+<!---
+Formatting reminder:
+1. Keep 'Type' column organized alphabetically
+2. 'mock' version of topic should be after its common counterpart
+--->
+| Topic                  | Type            | Publisher          | Subscriber(s)                                      |
+| ---------------------- | --------------  | ------------------ | -------------------------------------------------- |
+| `ais_ships`            | AISShips        | CanTrxRosIntf      | Local Pathfinding, Local Transceiver               |
+| `mock_ais_ships`       | AISShips        | Mock AIS           | CanSimIntf                                         |
+| `batteries`            | Batteries       | CanTrxRosIntf      | Local Transceiver                                  |
+| `boat_sim_input`       | CanSimToBoatSim | CanSimIntf         | Boat Simulator                                     |
+| `desired_heading`      | DesiredHeading  | Local Pathfinding  | CanTrxRosIntf                                      |
+| `data_sensors`         | GenericSensors  | CanTrxRosIntf      | Local Transceiver                                  |
+| `gps`                  | GPS             | CanTrxRosIntf      | Controller, Local Transceiver, Local Pathfinding   |
+| `mock_gps`             | GPS             | Boat Simulator     | CanSimIntf                                         |
+| `local_path_data`      | LPathData       | Local Pathfinding  | Local Transceiver                                  |
+| `global_path`          | Path            | Local Transceiver  | Local Pathfinding                                  |
+| `sail_cmd`             | SailCmd         | Controller         | CanTrxRosIntf                                      |
+| `filtered_wind_sensor` | WindSensor      | CanTrxRosIntf      | Controller, Local Transceiver, Local Pathfinding   |
+| `wind_sensors`         | WindSensors     | CanTrxRosIntf      | Local Transceiver                                  |
+| `mock_wind_sensors`    | WindSensors     | Boat Simulator     | CanSimIntf                                         |
 
 ### Project-wide Internal Interfaces
 
