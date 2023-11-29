@@ -19,22 +19,22 @@ Formatting reminder:
 1. Keep 'Type' column organized alphabetically
 2. 'mock' version of topic should be after its common counterpart
 --->
-| Topic                  | Type            | Publisher          | Subscriber(s)                                      |
-| ---------------------- | --------------  | ------------------ | -------------------------------------------------- |
-| `ais_ships`            | AISShips        | CanTrxRosIntf      | Local Pathfinding, Local Transceiver               |
-| `mock_ais_ships`       | AISShips        | Mock AIS           | CanSimIntf                                         |
-| `batteries`            | Batteries       | CanTrxRosIntf      | Local Transceiver                                  |
-| `boat_sim_input`       | CanSimToBoatSim | CanSimIntf         | Boat Simulator                                     |
-| `desired_heading`      | DesiredHeading  | Local Pathfinding  | CanTrxRosIntf                                      |
-| `data_sensors`         | GenericSensors  | CanTrxRosIntf      | Local Transceiver                                  |
-| `gps`                  | GPS             | CanTrxRosIntf      | Controller, Local Transceiver, Local Pathfinding   |
-| `mock_gps`             | GPS             | Boat Simulator     | CanSimIntf                                         |
-| `local_path_data`      | LPathData       | Local Pathfinding  | Local Transceiver                                  |
-| `global_path`(srv)     | GlobalPath      | Local Transceiver  | Local Pathfinding                                  |
-| `sail_cmd`             | SailCmd         | Controller         | CanTrxRosIntf                                      |
-| `filtered_wind_sensor` | WindSensor      | CanTrxRosIntf      | Controller, Local Transceiver, Local Pathfinding   |
-| `wind_sensors`         | WindSensors     | CanTrxRosIntf      | Local Transceiver                                  |
-| `mock_wind_sensors`    | WindSensors     | Boat Simulator     | CanSimIntf                                         |
+| Topic                  | File Name           | Publisher                            | Subscriber(s)                                      |
+| ---------------------- | ------------------- | ------------------------------------ | ---------------------------------------------------|
+| `ais_ships`            | AISShips.msg        | CanTrxRosIntf                        | Local Pathfinding, Local Transceiver               |
+| `mock_ais_ships`       | AISShips.msg        | Mock AIS                             | CanSimIntf                                         |
+| `batteries`            | Batteries.msg       | CanTrxRosIntf                        | Local Transceiver                                  |
+| `boat_sim_input`       | CanSimToBoatSim.msg | CanSimIntf                           | Boat Simulator                                     |
+| `desired_heading`      | DesiredHeading.msg  | Local Pathfinding                    | CanTrxRosIntf                                      |
+| `data_sensors`         | GenericSensors.msg  | CanTrxRosIntf                        | Local Transceiver                                  |
+| `gps`                  | GPS.msg             | CanTrxRosIntf                        | Controller, Local Transceiver, Local Pathfinding   |
+| `mock_gps`             | GPS.msg             | Boat Simulator                       | CanSimIntf                                         |
+| `local_path_data`      | LPathData.msg       | Local Pathfinding                    | Local Transceiver                                  |
+| `global_path`          | GlobalPath.srv      | Local Transceiver, Mock Global Path  | Local Pathfinding                                  |
+| `sail_cmd`             | SailCmd.msg         | Controller                           | CanTrxRosIntf                                      |
+| `filtered_wind_sensor` | WindSensor.msg      | CanTrxRosIntf                        | Controller, Local Transceiver, Local Pathfinding   |
+| `wind_sensors`         | WindSensors.msg     | CanTrxRosIntf                        | Local Transceiver                                  |
+| `mock_wind_sensors`    | WindSensors.msg     | Boat Simulator                       | CanSimIntf                                         |
 
 ### Project-wide Internal Interfaces
 
