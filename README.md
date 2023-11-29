@@ -55,9 +55,9 @@ ROS messages and services used in our [boat simulator](https://github.com/UBCSai
 
 ### Boat Simulator External Interfaces
 
-| Topic                  | Type           | Publisher                | Subscriber(s)                               |
-| ---------------------- | -------------- | ------------------------ | ------------------------------------------- |
-| `mock_kinematics`      | SimWorldState  | Simulator Physics Engine | Simulator Visualizer                        |
+| Topic                  | File Name          | Publisher                | Subscriber(s)                               |
+| ---------------------- | ------------------ | ------------------------ | ------------------------------------------- |
+| `mock_kinematics`      | SimWorldState.msg  | Simulator Physics Engine | Simulator Visualizer                        |
 
 ### Boat Simulator Actions
 
