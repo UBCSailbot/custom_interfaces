@@ -30,7 +30,7 @@ Formatting reminder:
 | `gps`                  | GPS             | CanTrxRosIntf      | Controller, Local Transceiver, Local Pathfinding   |
 | `mock_gps`             | GPS             | Boat Simulator     | CanSimIntf                                         |
 | `local_path_data`      | LPathData       | Local Pathfinding  | Local Transceiver                                  |
-| `global_path`          | Path            | Local Transceiver  | Local Pathfinding                                  |
+| `global_path`(srv)     | Path <=> Bool   | LocalTrans, MGPath | Local Pathfinding                                  |
 | `sail_cmd`             | SailCmd         | Controller         | CanTrxRosIntf                                      |
 | `filtered_wind_sensor` | WindSensor      | CanTrxRosIntf      | Controller, Local Transceiver, Local Pathfinding   |
 | `wind_sensors`         | WindSensors     | CanTrxRosIntf      | Local Transceiver                                  |
