@@ -57,6 +57,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${simulator_msg}
   ${simulator_action}
 
+  "srv/GlobalPath.srv"
+
   # Add packages that above messages depend on below if needed
   DEPENDENCIES std_msgs geometry_msgs
 )
