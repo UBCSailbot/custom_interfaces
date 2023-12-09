@@ -36,6 +36,11 @@ Formatting reminder:
 | `wind_sensors`         | WindSensors     | CanTrxRosIntf                        | Local Transceiver                                  |
 | `mock_wind_sensors`    | WindSensors     | Boat Simulator                       | CanSimIntf                                         |
 
+<!-->
+Update diagram by editing diagrams/src/external_interfaces.puml and the PlantUML Export Diagram command in VSCode
+--->
+![External Interface Diagram](diagrams/out/external_interfaces.png)
+
 ### Project-wide Internal Interfaces
 
 | Interface           | Used In                            |
