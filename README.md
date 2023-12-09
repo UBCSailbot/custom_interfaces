@@ -14,31 +14,11 @@ documented in the `.msg` or `.srv` file associated with that interface.
 ROS messages and services used across many ROS packages in the project.
 
 ### Project-wide External Interfaces
-<!---
-Formatting reminder:
-1. Keep 'Type' column organized alphabetically
-2. 'mock' version of topic should be after its common counterpart
---->
-| Topic                  | Type            | Publisher                            | Subscriber(s)                                      |
-| ---------------------- | --------------  | ------------------------------------ | -------------------------------------------------- |
-| `ais_ships`            | AISShips        | CanTrxRosIntf                        | Local Pathfinding, Local Transceiver               |
-| `mock_ais_ships`       | AISShips        | Mock AIS                             | CanSimIntf                                         |
-| `batteries`            | Batteries       | CanTrxRosIntf                        | Local Transceiver                                  |
-| `boat_sim_input`       | CanSimToBoatSim | CanSimIntf                           | Boat Simulator                                     |
-| `desired_heading`      | DesiredHeading  | Local Pathfinding                    | CanTrxRosIntf                                      |
-| `data_sensors`         | GenericSensors  | CanTrxRosIntf                        | Local Transceiver                                  |
-| `gps`                  | GPS             | CanTrxRosIntf                        | Controller, Local Transceiver, Local Pathfinding   |
-| `mock_gps`             | GPS             | Boat Simulator                       | CanSimIntf                                         |
-| `local_path_data`      | LPathData       | Local Pathfinding                    | Local Transceiver                                  |
-| `global_path`          | Path            | Local Transceiver, Mock Global Path  | Local Pathfinding                                  |
-| `sail_cmd`             | SailCmd         | Controller                           | CanTrxRosIntf                                      |
-| `filtered_wind_sensor` | WindSensor      | CanTrxRosIntf                        | Controller, Local Transceiver, Local Pathfinding   |
-| `wind_sensors`         | WindSensors     | CanTrxRosIntf                        | Local Transceiver                                  |
-| `mock_wind_sensors`    | WindSensors     | Boat Simulator                       | CanSimIntf                                         |
 
-<!-->
+<!--
 Update diagram by editing diagrams/src/external_interfaces.puml and the PlantUML Export Diagram command in VSCode
 --->
+
 ![External Interface Diagram](diagrams/out/external_interfaces.png)
 
 ### Project-wide Internal Interfaces
