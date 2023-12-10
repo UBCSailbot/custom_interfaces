@@ -19,7 +19,7 @@ ROS messages and services used across many ROS packages in the project.
 Update diagram by editing diagrams/src/external_interfaces.puml and the PlantUML Export Diagram command in VSCode
 --->
 
-![External Interface Diagram](diagrams/out/external_interfaces.png)
+![External Interface Diagram](https://github.com/UBCSailbot/custom_interfaces/blob/cb58efb5cd9297eab71d0910ffb6e6dff761cdfb/diagrams/out/external_interfaces.png?raw=true)
 
 ### Project-wide Internal Interfaces
 
