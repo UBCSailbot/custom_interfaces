@@ -5,4 +5,4 @@
 # -127 and +127 are special values indicates CCW/CW turning of more than 10 degrees/minute (only used if the reporting
 # vessel does not have an external ROT indicator device available)
 # -128 means no rot info
-int8 rot
+float32 rot
